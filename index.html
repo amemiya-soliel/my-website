@@ -1,19 +1,18 @@
 <html><head><style>
 .container {
-display: grid;
-grid-template-columns: repeat(3, 1fr) !important;
-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* PCは3列（自動調整） */
+  gap: 20px;
 }
-body {font-family: system-ui, sans-serif; margin: 1em;}
-ul {line-height: 1.8;}
-table {border-collapse: collapse; width: 100%; min-width: 600px;}
-th, td {border: 1px solid #ccc; padding: 6px; text-align: left;}
-th {background: #f5f5f5;}
-a {color: #06c; text-decoration: none;}
-a:hover {text-decoration: underline;}
-details {margin-bottom: 18px;}
-input[type=text] {width: 100%; padding: 6px; margin: 8px 0;}
-.scroll {overflow-x: auto;}
+
+@media (max-width: 640px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr) !important; /* スマホは強制2列 */
+  }
+}
+
+
+
 </style><script>
 function filterAll(){
 const v = document.getElementById('qall').value.toLowerCase();
