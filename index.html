@@ -3,14 +3,13 @@
 <style>
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) !important; /* PCは強制3列 */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 10px; /* 列間を詰める */
 }
 
-@media (max-width: 640px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr) !important; /* スマホは強制2列 */
-  }
+.container a, 
+.container li {
+  white-space: nowrap;  /* 必ず1行で表示 */
 }
 </style>
 
