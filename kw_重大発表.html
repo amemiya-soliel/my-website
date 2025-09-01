@@ -1,0 +1,20 @@
+<html><head>
+    <style>
+    body{font-family:system-ui,sans-serif;margin:1em;}
+    .scroll{overflow-x:auto;}
+    input[type=text]{width:100%;padding:6px;margin-bottom:8px;}
+    table{min-width:600px;border-collapse:collapse;width:100%;}
+    th,td{border:1px solid #ccc;padding:6px;text-align:left;}
+    th{background:#f5f5f5;}
+    td a{color:#0066cc;text-decoration:none;}
+    td a:hover{text-decoration:underline;}
+    </style>
+    <script>
+    function filterTable(){
+      const kw=document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('tbody tr').forEach(tr=>{
+        tr.style.display = tr.innerText.toLowerCase().includes(kw)?'':'none';
+      });
+    }
+    </script>
+    </head><body><h2>重大発表</h2><input type='text' id='search' placeholder='検索...' onkeyup='filterTable()'><div class='scroll'><table><thead><tr><th>No</th><th>日付</th><th>タイトル</th><th>時間</th></tr></thead><tbody><tr><td>2622</td><td>2025/08/20</td><td><a href='https://www.youtube.com/watch?v=ASPL7nXIpGA' target='_blank'>重大発表があります VS最上位テトラードラえもん！50先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:53:16</td></tr><tr><td>2546</td><td>2025/05/30</td><td><a href='https://www.youtube.com/watch?v=aV_z0LKW6RU' target='_blank'>【重大発表】5月31日(土)午前11時～フジテレビの【チャンハウス】に出演します！！！VS究極AIほいこ50先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>03:12:45</td></tr><tr><td>2491</td><td>2025/04/14</td><td><a href='https://www.youtube.com/watch?v=GjFv48WfURc' target='_blank'>【重大発表】明日の4/15(火)19時～「日本一スゴい人！衝撃映像GP」にテレビ出演します！！！！！【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:36:47</td></tr><tr><td>2017</td><td>2023/11/15</td><td><a href='https://www.youtube.com/watch?v=gfa8l_rqrgY' target='_blank'>重大発表があります！！！【世界ランカー7041点】スイカゲーム全国大会2位がスコアカンストを目指す！ダブルスイカ複数回達成者【スイカゲーム】</a></td><td>04:25:42</td></tr><tr><td>1827</td><td>2023/04/29</td><td><a href='https://www.youtube.com/watch?v=F8VxPhPHXcA' target='_blank'>重大発表【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:19:38</td></tr><tr><td>1798</td><td>2023/04/01</td><td><a href='https://www.youtube.com/watch?v=yFW-Cp1Z9Kg' target='_blank'>重大発表があります【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:39:28</td></tr><tr><td>1699</td><td>2022/12/14</td><td><a href='https://www.youtube.com/watch?v=HcGVhbDdCtU' target='_blank'>重大発表があります【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:03:13</td></tr><tr><td>1450</td><td>2022/03/08</td><td><a href='https://www.youtube.com/watch?v=ocp3M3sbC4c' target='_blank'>【重大発表】「家、ついて行ってイイですか？」出演します！3月9日(水)夜9時～【240連勝～】【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:49:40</td></tr></tbody></table></div><p><a href='index.html'>インデックスに戻る</a></p></body></html>

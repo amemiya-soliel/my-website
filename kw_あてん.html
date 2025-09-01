@@ -1,0 +1,20 @@
+<html><head>
+    <style>
+    body{font-family:system-ui,sans-serif;margin:1em;}
+    .scroll{overflow-x:auto;}
+    input[type=text]{width:100%;padding:6px;margin-bottom:8px;}
+    table{min-width:600px;border-collapse:collapse;width:100%;}
+    th,td{border:1px solid #ccc;padding:6px;text-align:left;}
+    th{background:#f5f5f5;}
+    td a{color:#0066cc;text-decoration:none;}
+    td a:hover{text-decoration:underline;}
+    </style>
+    <script>
+    function filterTable(){
+      const kw=document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('tbody tr').forEach(tr=>{
+        tr.style.display = tr.innerText.toLowerCase().includes(kw)?'':'none';
+      });
+    }
+    </script>
+    </head><body><h2>あてん</h2><input type='text' id='search' placeholder='検索...' onkeyup='filterTable()'><div class='scroll'><table><thead><tr><th>No</th><th>日付</th><th>タイトル</th><th>時間</th></tr></thead><tbody><tr><td>2628</td><td>2025/08/26</td><td><a href='https://www.youtube.com/watch?v=r8UUmTCeCDE' target='_blank'>【VS最上位テトラーあてん】テトリス30先【ぷよぷよテトリス2S】【puyopuyotetris2S】</a></td><td>02:50:52</td></tr><tr><td>2594</td><td>2025/07/20</td><td><a href='https://www.youtube.com/watch?v=wp04OMPqKuw' target='_blank'>【過去最高レベルの神試合】VS最上位テトラーあてん&ドラえもん テトリス50先→30先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:40:44</td></tr><tr><td>2511</td><td>2025/05/04</td><td><a href='https://www.youtube.com/watch?v=QkNz_M_22Ck' target='_blank'>【VS最上位テトラーあてん】テトリス30先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>03:02:09</td></tr><tr><td>2310</td><td>2024/10/02</td><td><a href='https://www.youtube.com/watch?v=3LILpJzgnlw' target='_blank'>【VS最上位テトラーあてん】テトリス40先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:39:13</td></tr><tr><td>2230</td><td>2024/07/11</td><td><a href='https://www.youtube.com/watch?v=uD9uw-b7p60' target='_blank'>【VS最上位テトラーあてん】テトリス30先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>04:02:42</td></tr><tr><td>2223</td><td>2024/07/02</td><td><a href='https://www.youtube.com/watch?v=0W52fkXgoYI' target='_blank'>【VS最上位テトラーあてん】テトリス連戦【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:53:02</td></tr><tr><td>2189</td><td>2024/05/26</td><td><a href='https://www.youtube.com/watch?v=ARlSqUg_Ej4' target='_blank'>【VS最上位テトラーあてん】テトリス連戦【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>03:08:41</td></tr><tr><td>1935</td><td>2023/08/24</td><td><a href='https://www.youtube.com/watch?v=7eGbbN50Rlg' target='_blank'>VS最上位テトラーあてん！テトリス30先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:47:56</td></tr><tr><td>1906</td><td>2023/07/24</td><td><a href='https://www.youtube.com/watch?v=uUNG4IIz-tI' target='_blank'>VS最上位テトラーあてん【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:34:48</td></tr><tr><td>1783</td><td>2023/03/13</td><td><a href='https://www.youtube.com/watch?v=4s7KKkg2ctg' target='_blank'>【大会】VSあてん&かきぃ15先【ぷよぷよテトリス2】【puyopuyotetris2】</a></td><td>02:14:17</td></tr></tbody></table></div><p><a href='index.html'>インデックスに戻る</a></p></body></html>

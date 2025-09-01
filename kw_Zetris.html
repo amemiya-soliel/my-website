@@ -1,0 +1,20 @@
+<html><head>
+    <style>
+    body{font-family:system-ui,sans-serif;margin:1em;}
+    .scroll{overflow-x:auto;}
+    input[type=text]{width:100%;padding:6px;margin-bottom:8px;}
+    table{min-width:600px;border-collapse:collapse;width:100%;}
+    th,td{border:1px solid #ccc;padding:6px;text-align:left;}
+    th{background:#f5f5f5;}
+    td a{color:#0066cc;text-decoration:none;}
+    td a:hover{text-decoration:underline;}
+    </style>
+    <script>
+    function filterTable(){
+      const kw=document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('tbody tr').forEach(tr=>{
+        tr.style.display = tr.innerText.toLowerCase().includes(kw)?'':'none';
+      });
+    }
+    </script>
+    </head><body><h2>Zetris</h2><input type='text' id='search' placeholder='検索...' onkeyup='filterTable()'><div class='scroll'><table><thead><tr><th>No</th><th>日付</th><th>タイトル</th><th>時間</th></tr></thead><tbody><tr><td>1763</td><td>2023/02/18</td><td><a href='https://www.youtube.com/watch?v=MSD-4icf5mY' target='_blank'>【世界大会優勝者VS元祖最強AI】VSフルパワーZetris50先【ぷよぷよテトリス2】【puyopuuyotetris2】</a></td><td>02:31:57</td></tr><tr><td>1064</td><td>2021/03/12</td><td><a href='https://www.youtube.com/watch?v=gvgE3HFMBww' target='_blank'>【VS最強AI】tetras！Zetris！ColdClear！【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>03:13:51</td></tr><tr><td>814</td><td>2020/08/21</td><td><a href='https://www.youtube.com/watch?v=QSax_EZx3yE' target='_blank'>VS Zetris！元祖最強AI【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>03:05:55</td></tr><tr><td>644</td><td>2020/03/05</td><td><a href='https://www.youtube.com/watch?v=zeRJVHBHdOY' target='_blank'>【最強AI対決】Zetris VS ColdClear！ミラー解説【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>02:46:56</td></tr><tr><td>610</td><td>2020/01/30</td><td><a href='https://www.youtube.com/watch?v=C0CNwoVKsZs' target='_blank'>AIとAIを対戦させたら異次元すぎる試合になったｗｗｗ【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>00:16:26</td></tr><tr><td>605</td><td>2020/01/24</td><td><a href='https://www.youtube.com/watch?v=fjV8wSlMJEA' target='_blank'>あめみや&ともくんVS Zetris VS ColdClear！【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>03:19:45</td></tr><tr><td>602</td><td>2020/01/21</td><td><a href='https://www.youtube.com/watch?v=1CjBcM0VTno' target='_blank'>【最強AI対決】Zetris VS ColdClear！ミラー解説【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>03:48:07</td></tr><tr><td>598</td><td>2020/01/17</td><td><a href='https://www.youtube.com/watch?v=T4cNaoWRiLo' target='_blank'>【ColdClear編】最強AIのテトリス考察！【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>04:03:34</td></tr><tr><td>596</td><td>2020/01/15</td><td><a href='https://www.youtube.com/watch?v=O88GzK5e468' target='_blank'>【Zetris編】最強AIのテトリス考察！【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>04:17:19</td></tr><tr><td>595</td><td>2020/01/14</td><td><a href='https://www.youtube.com/watch?v=-e7b8szsYmA' target='_blank'>【最強AI対決】Zetris VS ColdClear！ミラー解説【ぷよぷよテトリス】【puyopuyotetris】</a></td><td>03:13:07</td></tr></tbody></table></div><p><a href='index.html'>インデックスに戻る</a></p></body></html>
