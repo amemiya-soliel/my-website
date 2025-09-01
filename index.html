@@ -1,98 +1,27 @@
-<html>
-    <head>
-        <style>
-            .container {
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3列を基本 */
-                gap: 10px; /* 隙間を小さくして幅を節約 */
-                width: 100%;
-            }
-
-            body {
-                font-family: system-ui, sans-serif;
-                margin: 1em;
-                width: 100%;
-                max-width: 1200px; /* ブログ幅に収まる最大値 */
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            ul {
-                line-height: 1.8;
-            }
-
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                box-sizing: border-box; /*  paddingやborderを含めて幅を計算 */
-            }
-
-            th, td {
-                border: 1px solid #ccc;
-                padding: 4px; /* パディングを小さくして幅を節約 */
-                text-align: left;
-                font-size: 0.9em; /* 文字を小さくしてスペースを確保 */
-            }
-
-            th {
-                background: #f5f5f5;
-            }
-
-            a {
-                color: #06c;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            details {
-                margin-bottom: 18px;
-            }
-
-            input[type=text] {
-                width: 100%;
-                padding: 6px;
-                margin: 8px 0;
-                box-sizing: border-box;
-            }
-
-            .scroll {
-                overflow-x: hidden; /* 横スクロールを明示的に禁止 */
-            }
-
-            /* レスポンシブ調整：幅に応じて列数を減らす */
-            @media (max-width: 900px) {
-                .container {
-                    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 900px以下で2列 */
-                }
-            }
-
-            @media (max-width: 600px) {
-                .container {
-                    grid-template-columns: 1fr; /* 600px以下で1列 */
-                }
-            }
-
-            iframe {
-                width: 100%;
-                border: none;
-                max-width: 1200px; /* ブログの幅に合わせる */
-            }
-        </style>
-        <script>
-            function filterAll() {
-                const v = document.getElementById('qall').value.toLowerCase();
-                document.querySelectorAll('#all tbody tr').forEach(tr => {
-                    tr.style.display = tr.innerText.toLowerCase().includes(v) ? '' : 'none';
-                });
-            }
-        </script>
-    </head>
-    <body>
-        <details>
-            <summary>
+<html><head><style>
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr) !important;
+gap: 20px;
+}
+body {font-family: system-ui, sans-serif; margin: 1em;}
+ul {line-height: 1.8;}
+table {border-collapse: collapse; width: 100%; min-width: 600px;}
+th, td {border: 1px solid #ccc; padding: 6px; text-align: left;}
+th {background: #f5f5f5;}
+a {color: #06c; text-decoration: none;}
+a:hover {text-decoration: underline;}
+details {margin-bottom: 18px;}
+input[type=text] {width: 100%; padding: 6px; margin: 8px 0;}
+.scroll {overflow-x: auto;}
+</style><script>
+function filterAll(){
+const v = document.getElementById('qall').value.toLowerCase();
+document.querySelectorAll('#all tbody tr').forEach(tr => {
+tr.style.display = tr.innerText.toLowerCase().includes(v) ? '' : 'none';
+});
+}
+</script></head><body><details><summary>
 
 
 
