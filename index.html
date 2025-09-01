@@ -1,8 +1,9 @@
 <html><head>
 
-<style>.container {
+<style>
+.container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* PCは3列（自動調整） */
+  grid-template-columns: repeat(3, 1fr) !important; /* PCは強制3列 */
   gap: 20px;
 }
 
@@ -11,9 +12,7 @@
     grid-template-columns: repeat(2, 1fr) !important; /* スマホは強制2列 */
   }
 }
-
 </style>
-
 
 
 
